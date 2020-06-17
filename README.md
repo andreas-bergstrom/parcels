@@ -24,3 +24,21 @@ curl --request POST --data '{"CourierId": 1, "height": 2}' --header "Content-Typ
 curl --request DELETE --header "Content-Type: application/json" http://localhost:3000/couriers/1
 curl --request PUT --data '{"width": 21, "height": 22}' --header "Content-Type: application/json" http://localhost:3000/parcels/2
 ```
+
+## Models
+
+Courier:
+
+- name
+
+Parcel:
+
+- width
+- height
+- length
+- CourierId
+
+## Endpoints
+
+- /couriers : A courier has many parcels
+- /parcels : A parcel belong to a courier
