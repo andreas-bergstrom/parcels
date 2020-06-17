@@ -41,4 +41,5 @@ Parcel:
 ## Endpoints
 
 - /couriers : A courier has many parcels
+  - /couriers?name=UPS : filter couriers by name
 - /parcels : A parcel belong to a courier
