@@ -1,7 +1,6 @@
 const express = require("express");
 const finale = require("finale-rest");
 const bodyParser = require("body-parser");
-const { check, validationResult } = require("express-validator");
 const db = require("./models");
 const { Parcel, Courier } = db;
 const env = process.env.NODE_ENV || "development";
